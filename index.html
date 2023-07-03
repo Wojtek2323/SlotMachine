@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="stylesheet" type="text/css" href="css/slot-machine.css" />
+    <link rel="stylesheet" type="text/css" href="css/demo.css" />
+
+    
+
+    <title>Samsung Slot Machine</title>
+  </head>
+
+  <style>
+ body {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      margin: 0;
+      background-color: #f2f2f2;
+    }
+
+    #reader {
+		height: 600px;
+		width: 600px;
+    }
+
+  </style>
+</head>
+<body>
+   <div id="reader">
+  </div>
+  
+    <div id="slot-machine" class="slot-machine" hidden>
+
+    <button id="play-button" >Play</button>
+
+</div>
+
+<div class="guestInfo">
+ <div id="order-div">{order div placeholder}</div>
+ <div id="score-div">{roomNO and score div placeholder}</div>
+
+
+</div>
+ <div id="casinoLogo">Miejsce na Twoje logo</div>
+ 	<script type="text/javascript" src="js/html5-qrcode.min.js"></script>
+    <script type="text/javascript" src="js/main.js"></script>
+    <script type="text/javascript" src="js/DBoperations.js"></script>
+	<script type="text/javascript" src="js/layoutChange.js"></script>
+  </body>
+</html>

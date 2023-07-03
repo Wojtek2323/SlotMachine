@@ -1,0 +1,55 @@
+body {
+  background-image: url('../img/scanBackground.png');
+  background-repeat: cover;
+  background-size: cover;
+  background-attachment: cover;
+}
+.new-body {
+  background-image: url('../img/slotBackground.png');
+  background-size: cover;
+
+}
+
+#slot-machine {
+  margin: 10% auto 0 auto;
+  /*background-color: red;*/
+  /*background: transparent;/*/
+}
+
+#play-button {
+  display: block;
+  margin: 0 auto;
+  height: 50px;
+  width: 100px;
+  border-radius: 4px;
+  border: none;
+  color: white;
+  background-color: #3bb4b4;
+  font-weight: bold;
+  font-family: Roboto, Arial, sans-serif;
+  /*font-size: 150%;*/
+}
+#order-div {
+            width: 300px;
+            height: 300px;
+            position: absolute;
+            top: 30px;
+            right: 30px;
+            background-color: #f1f1f1;
+        }
+
+#score-div {
+            width: 300px;
+            height: 300px;
+            position: absolute;
+            top: 30px;
+            left: 30px;
+            background-color: white;
+        }
+#casinoLogo {
+            width: 600px;
+            height: 300px;
+            position: absolute;
+			bottom: 510px;
+            background-color: white;
+        }
