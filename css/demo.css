@@ -1,9 +1,22 @@
 body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+  background-color: #f2f2f2;
   background-image: url('../img/scanBackground.png');
   background-repeat: cover;
   background-size: cover;
   background-attachment: cover;
 }
+
+#reader {
+height: 600px;
+width: 600px;
+}
+
+
 .new-body {
   background-image: url('../img/slotBackground.png');
   background-size: cover;
