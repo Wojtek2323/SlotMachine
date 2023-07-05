@@ -477,13 +477,16 @@ if (typeof module !== 'undefined' && module.exports) {
           ]
         }
       ];
-
+ // WIN CONDITIONS
       window.onload = function() {
         const callback = function(payLine) {
           console.log(payLine[0].title + ' | ' + payLine[1].title + ' | ' + payLine[2].title);
 
           if (payLine[0].title === payLine[1].title && payLine[0].title === payLine[2].title) {
            (new Audio('sounds/winner.mp3')).play();
+
+
+          
 		   alert("Winner Winner Chicken Dinner, Now it is all going to DB!");
         }
         };

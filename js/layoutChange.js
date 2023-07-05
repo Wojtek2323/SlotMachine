@@ -1,3 +1,32 @@
+ //konctruktor wykonania funkcji
+ function execute() {
+  const url = 'http://localhost:3000/funcion';
+  const options = {
+    method: 'POST',
+    headers: {
+      'Content-Type': 'application/json'
+    },
+    body: JSON.stringify({ execute })
+  };
+
+  fetch(url, options)
+  .then(response => response.json())
+  .then(data => {
+    // Otrzymany wynik z serwera
+    console.log(data.wynik);
+  })
+  .catch(error => {
+    // Obsługa błędów
+    console.error(error);
+  });
+ }
+
+ //connection check
+ execute();
+
+
+
+
  // toggling view
  
  // elements:
