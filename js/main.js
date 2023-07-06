@@ -488,6 +488,11 @@ if (typeof module !== 'undefined' && module.exports) {
 
           
 		   alert("Winner Winner Chicken Dinner, Now it is all going to DB!");
+
+
+        }else{
+
+          alert("you lost")
         }
         };
 
@@ -518,6 +523,31 @@ function success(result){
 //return result;
 scoreDiv.innerHTML=result
 toggleHidden()
+//wywołanie funkcji która na podstawie qrcode wyciaga dane o graczu z bazy danych
+
+function updateUserTokens() {
+  const url = 'http://localhost:3000/updateUserTokens';
+  const options = {
+    method: 'POST',
+    headers: {
+      'Content-Type': 'application/json'
+    },
+    body: JSON.stringify({ updateUserTokens })
+  };
+
+  fetch(url, options)
+  .then(response => response.json())
+  .then(data => {
+    // Otrzymany wynik z serwera
+    console.log(data.wynik);
+  })
+  .catch(error => {
+    // Obsługa błędów
+    console.error(error);
+  });
+ };
+
+updateUserTokens()
 //scanner.pause(true)
 
  scanner.clear().then(_ => {
@@ -528,12 +558,7 @@ toggleHidden()
   });
 }
 
-function showGame(){
-
-//code to change to game mode
-
-}
 
 function error(err){
-//console.log(err);	
+//console.log("main error: "+err.message)
 }

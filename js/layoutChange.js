@@ -1,12 +1,12 @@
- //konctruktor wykonania funkcji
- function execute() {
-  const url = 'http://localhost:3000/funcion';
+ //fukcja testowa połączenia
+ (function connectionTest() {
+  const url = 'http://localhost:3000/connectionTest';
   const options = {
     method: 'POST',
     headers: {
       'Content-Type': 'application/json'
     },
-    body: JSON.stringify({ execute })
+    body: JSON.stringify({ connectionTest })
   };
 
   fetch(url, options)
@@ -19,10 +19,8 @@
     // Obsługa błędów
     console.error(error);
   });
- }
+ })();
 
- //connection check
- execute();
 
 
 
